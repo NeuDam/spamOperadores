@@ -65,14 +65,3 @@ const spamTigo = async (phoneNumber) => {
 }
 
 const form = document.getElementById('my-form')
-
-form.addEventListener("submit", (e) => {
-  e.preventDefault()
-  const dataForm = Object.fromEntries(new FormData(document.getElementById('my-form')))
-  spamWom(dataForm.phone)
-  spamClaro(dataForm.phone)
-  spamTigo(dataForm.phone)
-
-  alert('SPAM HAS BEEN SENT')
-
-})
